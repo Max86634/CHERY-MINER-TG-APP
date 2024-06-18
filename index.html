@@ -20,7 +20,7 @@
 			<div class="layers__item layer-2" style="background-image: url(0.jpg);"></div>
 			<div class="layers__item layer-3">
 				<div class="hero-content">
-					<h1 style="font-size: 35px;" id="counter"> пожамкано вишенок : <span >НЕТУ ПОКА</span></h1>
+					<h1 style="font-size: 35px;" id="counter"> пожамкано вишенок:<span >НЕТУ ПОКА</span></h1>
 					<!-- <div class="hero-content__p">Creating a beautiful 3D website with a ‘lens effect’</div> -->
 					<button class="button-start"  id="coin">тык!</button>
           
@@ -45,12 +45,12 @@
 }
 @font-face {
 	font-family: kamerik-3d;
-	src: url(../fonts/kamerik205-heavy.woff2);
+	src: url(kamerik205-heavy.woff2);
 	font-weight: 900;
 }
 @font-face {
 	font-family: merriweather-italic-3d;
-	src: url(../fonts/merriweather-regular-italic.woff2);
+	src: url(merriweather-regular-italic.woff2);
 }
 body {
 	background-color: #000;
@@ -172,8 +172,8 @@ image.addEventListener('click', () => {
     document.addEventListener('mousemove', e => {
 	Object.assign(document.documentElement, {
 		style: `
-		--move-x: ${(e.clientX - window.innerWidth / 2) * -.05}deg;
-		--move-y: ${(e.clientY - window.innerHeight / 2) * .1}deg;
+		--move-x: ${(e.clientX - window.innerWidth / 2) * -.075}deg;
+		--move-y: ${(e.clientY - window.innerHeight / 2) * .01}deg;
 		`
 	})
 })
